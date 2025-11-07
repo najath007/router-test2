@@ -1,0 +1,22 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Arun",
+      "place": "Kozhikode",
+      "phone": "9876543210"
+    },
+    {
+      "id": 2,
+      "name": "Fathima",
+      "place": "Kannur",
+      "phone": "9123456780"
+    },
+    {
+      "id": "6f46",
+      "name": "esfse",
+      "place": "efewg",
+      "phone": "sefsef"
+    }
+  ]
+}
