@@ -6,7 +6,7 @@ function Home() {
   const [students, setStudents] = useState([]);
   
   const loadData = () => {
-    fetch("http://localhost:5000/students")
+      fetch("http://localhost:5000/students")
       .then((res) => res.json())
       .then((data) => setStudents(data))
       .catch((err) => console.log(err));
@@ -55,25 +55,25 @@ function Home() {
                 <td>{stu.place}</td>
                 <td>{stu.phone}</td>
 
-                <td>
-                  {/* ✅ View Button */}
-                  <Link to={`/view/${stu.id}`} className="btn-view">
-                    View
-                  </Link>
+                  <td>
+                    {/* ✅ View Button */}
+                    <Link to={`/view/${stu.id}`} className="btn-view">
+                      View
+                    </Link>
 
-                  {/* ✅ Edit Button */}
-                  <Link to={`/edit/${stu.id}`} className="btn-edit">
-                    Edit
-                  </Link>
+                    {/* ✅ Edit Button */}
+                    <Link to={`/edit/${stu.id}`} className="btn-edit">
+                      Edit
+                    </Link>
 
-                  {/* ✅ Delete Button */}
-                  <button
-                    onClick={() => handleDelete(stu.id)}
-                    className="btn-delete"
-                  >
-                    Delete
-                  </button>
-                </td>
+                    {/* ✅ Delete Button */}
+                    <button
+                      onClick={() => handleDelete(stu.id)}
+                      className="btn-delete"
+                    >
+                      Delete
+                    </button>
+                  </td>
 
               </tr>
             ))}
